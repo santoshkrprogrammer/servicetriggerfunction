@@ -32,9 +32,10 @@ jobs:
       - name: 'Az CLI login'
         uses: azure/login@v1
         with:
-          client-id: "0bd225bd-5239-412e-997a-bcf464dfdf58"
+          client-id: "2cbedc36-e609-4306-b76e-d2b9c96953a7"
           tenant-id: "f311114e-7747-4f11-b55a-1630bd1e81ce"
           subscription-id: "09d41973-2754-44c5-9bcf-dd5eca4132b2"
+          federated-identity: true
   
       - name: 'Run az commands'
         run: |
